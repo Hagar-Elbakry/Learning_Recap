@@ -4,4 +4,9 @@ A collection of code examples and recaps of my learning journey as a web develop
 
 ## Examples 
 
-- **Example 1:** PHP Form Handling and data validation 
+- **Example 1:** [<span style="color:green;">PHP Form Handling</span>]
+(<span style="color:blue;">form-validation/README.md</span>)
+
+ ## File Structure 
+
+ - **form-validation/**: Contains example related to PHP form handling
