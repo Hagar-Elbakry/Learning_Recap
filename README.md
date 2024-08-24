@@ -4,4 +4,5 @@ A collection of code examples and recaps of my learning journey as a web develop
 
 ## Examples 
 
-- **Example 1:** PHP Form Handling</span>
+- **Example 1:** PHP Form Handling
+- **Example 2:** Image upload with validation
