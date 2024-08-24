@@ -1,11 +1,17 @@
 # Image Upload with Validation Example
 
-This example shows how to upload on image with validation checks for file type, size, and preventing duplicate uploads.
+This example shows how to upload an image with validation checks for file type, size, and preventing duplicate uploads.
 
 ## Features:
 - Validate that the file is an image (JPG, PNG, JPEG, GIF).
 - Ensure the file size is under 500KB.
 - Prevent uploading the same image twice.
+
+## File Structure:
+
+- **upload.php:** HTML form for image upload
+- **index.php:** PHP script to handle image upload and validation
+- **uploads/:** Directory where uploaded images are stored
 
 ## How to Use:
 
