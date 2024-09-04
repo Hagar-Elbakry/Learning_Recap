@@ -6,3 +6,4 @@ A collection of code examples and recaps of my learning journey as a web develop
 
 - **Example 1:** PHP Form Handling
 - **Example 2:** Image upload with validation
+- **Example 3:** Simple Sign Up System with Database interaction
