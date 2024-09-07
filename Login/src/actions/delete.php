@@ -6,11 +6,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
     try{
         require_once "dbh.php";
-        $sql = "DELETE FROM users WHERE email=:email AND pwd=:pwd";
+        $sql = "SELECT pwd FROM users WHERE email = :email";
         $stmt=$pdo->prepare($sql);
         $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":pwd", $pwd);    
         $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if($result) {
+            if(password_verify($pwd, $result['pwd'])) {
+                $sql = "DELETE FROM users WHERE email = :email";
+                $stmt=$pdo->prepare($sql);
+                $stmt->bindParam(":email", $email);
+                $stmt->execute();
+            }
+        }
         $pdo = null;
         $stmt = null;
         header("location: ../../public/index.php");
