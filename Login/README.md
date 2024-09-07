@@ -17,4 +17,6 @@ This folder contains a simple sign-up system. Users can register with their name
 ## Features 
 
 - **Sign Up**: Register a new user with a name, email, password.
-- **Delete**: Remove user data from the database.
+- **Delete**: Remove user data from the database after verifying the password.
+- **Password Hashing**: Passwords are hashed before storing them in the database for enhanced security.
+- **Password Verification**: Passwords are verified against the hashed value in the database before allowing the deletion of user data.
